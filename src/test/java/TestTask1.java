@@ -1,20 +1,16 @@
 import com.codeborne.selenide.Configuration;
-import org.junit.Test;
-import org.openqa.selenium.By;
+import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.value;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.open;
+
 
 public class TestTask1 {
     @Test
     public void userCanAuthenticate() {
+        Configuration.browser ="chrome";
 
-        Configuration.browser = "chrome";
+        open("https://postman-echo.com/basic-auth", "", "postman");
 
-        open("https://postman-echo.com/basic-auth");
-       close();
 
 
     }

@@ -2,7 +2,7 @@ Feature: Authentication via chrome
 
   Scenario: Authenticate via chrome by providing valid username/password combination
 
-    Given I open homepage
+    Given I open "https://postman-echo.com/basic-auth"
 
     When I see "username"
     Then I enter "username"

@@ -6,6 +6,12 @@ import cucumber.api.java.en.When;
 
 public class MyStepdefs {
 
+    @Given("^I open homepage$")
+    public void iOpenHomepage() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
     @Then("^I click \"([^\"]*)\"$")
     public void iClick(String arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
@@ -31,8 +37,9 @@ public class MyStepdefs {
     }
 
 
-    @Given("^I open homepage$")
-    public void iOpenHomepage() throws Throwable {
+    @Given("^I open \"([^\"]*)\"$")
+    public void iOpen(String arg0) throws Throwable {
+
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
